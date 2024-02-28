@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  B one -target the anchor tag a change color */
+        nav a  {
+            color: green;
+ 
+
+        }
+        /* B two-target the first h2 tag and change the text and background color*/
+           nav > h2 {
+            color: red;
+            background-color: snow;
+           }
+
+        /* B three- targets the first p tag and change the text to red */
+           ul + p{
+            color: red;
+           }
+
+
+        /* c one- target the anchor tag width attribute "href" and change color to red and 
+              remove the text underline */
+              
+              a[href]   {
+                color: red;
+                text-decoration: none;
+              }
+
+            
+
+
+              a[class="activate"] {
+                color:blue;
+                text-decoration: underline;
+              }
+
+
+
+
+
+
+              a[target ="_self"] {
+                background-color: gray;
+
+              }
+
+              p:last-child: ::after {
+                content: "...."
+              }
+
+              li::marker{
+                color: green;
+              }
+
+
+
+
+
+
+
+              p:nth-child(even)::first-letter {
+                color: red;
+                font-size: 30px;
+              }
+              h1{
+                color: red;
+              }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TOI</h1>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_self">About</a></li>
+                    <li><a href="#" target="_blank">Service</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+
+
+
+
+
+
+
+                </ul>
+            </div>
+
+
+            <p>The times of india</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate obcaecati ullam facilis a mollitia repellendus quae fugit. Sint, sunt.</p>
+            
+
+            <p>read articles</p>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+    
+</body>
+</html>
